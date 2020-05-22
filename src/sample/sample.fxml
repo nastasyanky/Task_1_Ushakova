@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane prefHeight="133.0" prefWidth="376.0" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="355.0" minWidth="10.0" prefWidth="355.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="0.0" prefWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <FlowPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="label_0" text="Всего ягод" />
+                  <TextField fx:id="tf_1" />
+               </children>
+            </FlowPane>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="button_1" mnemonicParsing="false" onAction="#r_1" text="Церковь" />
+                  <Label fx:id="label_1" text="???" translateX="25.0">
+                     <rotationAxis>
+                        <Point3D x="1.0" z="1.0" />
+                     </rotationAxis>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="button_2" mnemonicParsing="false" onAction="#r_2" text="Бабушка" />
+                  <Label fx:id="label_2" text="???" translateX="25.0" />
+               </children>
+               <rotationAxis>
+                  <Point3D x="25.0" z="1.0" />
+               </rotationAxis>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="button_3" mnemonicParsing="false" onAction="#r_3" text="Варенье" />
+                  <Label fx:id="label_3" text="???" translateX="25.0" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <TextArea prefHeight="113.0" prefWidth="376.0" text="Маша ушла в лес собирать ягоды. &#10;Когда она вернулась, мама сказала, &#10;что бы 1/10 ягод она отнесла в церковь, &#10;четверть бабушке, &#10;а всё остальное оставила дома для варенья. &#10;Кому, сколько ягод отнесла Маша?" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
